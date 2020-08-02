@@ -1,0 +1,23 @@
+{
+  "name": "budgetsquad",
+  "version": "0.1.0",
+  "description": "The Budget App",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Budget-Squad/thebudgetapp.git"
+  },
+  "author": "Jayson,Khoa,Wilson,Jeremy,Jordan,Tyson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Budget-Squad/thebudgetapp/issues"
+  },
+  "homepage": "https://github.com/The-Budget-Squad/thebudgetapp#readme",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  }
+}

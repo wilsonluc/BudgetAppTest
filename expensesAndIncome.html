@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses and Income</title>
+</head>
+
+<style>
+    .bottomButton {
+        border: none;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 33%;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .dashboards {
+        left: calc(100*0%/ 3);
+    }
+
+    .expensesAndIncome {
+        left: calc(100*1%/ 3);
+    }
+
+    .home {
+        left: calc(100*2% / 3);
+    }
+
+    .hover {
+        background-color: #92768C;
+    }
+
+    .hover:hover {
+        background-color: #4B296B;
+    }
+</style>
+
+
+<body style="background-color: #FDE6B4">
+
+<div id="dashboard">
+    <a href="dashboards.html"><button class="bottomButton dashboards hover"><u>Dashboards</u></button></a>
+    <a href="expensesAndIncome.html"><button class="bottomButton expensesAndIncome hover"><u>Expenses & Income</u></button></a>
+    <a href="help.html"><button class="bottomButton home hover"><u>Help</u></button></a>
+</div>
+</body>
+</html>

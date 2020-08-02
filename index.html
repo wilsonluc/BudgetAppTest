@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    .logoPos {
+        width:280px;
+        height:280px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        width: 50%;
+    }
+
+    .sloganPos {
+        margin-top: 2%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .divCenter {
+        text-align: center;
+    }
+
+    .usernamePos {
+        color:white;
+        background-color: #8B6220;
+        text-align: center;
+        font-size: 18px;
+        padding: 6px 14px;
+    }
+
+    .loginPos {
+        color:white;
+        background-color: #8B6220;
+        font-size: 18px;
+        padding: 6px 50px;
+    }
+
+    .disclaimerPos {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+</style>
+
+<body style="background-color: #FDE6B4">
+    <div id="logoDiv">
+        <img class="logoPos" src="Budget_Squad.svg">
+    </div>
+    <div class="sloganPos" id="sloganDiv">
+        <p>Company Slogan</p>
+    </div><br><br><br><br><br>
+    <div class="divCenter" id="usernameDiv">
+        <input class="usernamePos" type="text" placeholder="Username" id="username">
+    </div><br><br><br>
+    <div class="divCenter" id="loginDiv">
+        <a href="dashboards.html"><button class="loginPos" id="login">Login</button></a>
+    </div>
+    <div class="disclaimerPos" id="disclaimerDiv">
+        <p>Company Information and Disclaimer</p>
+    </div>
+</body>
+</html>

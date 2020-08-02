@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboards</title>
+</head>
+
+<style>
+    .logoResize {
+        width:100px;
+        height:100px;
+        top: 10px;
+        left: 10px;
+        position: absolute;
+    }
+    .titlePos {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .topButton {
+        background-color: #B2B2B2;
+        border: 1px solid;
+        font-size: 30px;
+        margin: 4px 2px;
+        display: block;
+        padding: 8px;
+        position: absolute;
+        width: 10%;
+        top: 2%;
+    }
+    .printPos {
+        right: 13%;
+    }
+    .logoffPos {
+        right: 2%;
+    }
+
+    .bottomButton {
+        border: none;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 33%;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+    }
+    .dashboards {
+        left: calc(100*0%/ 3);
+    }
+
+    .expensesAndIncome {
+        left: calc(100*1%/ 3);
+    }
+
+    .home {
+        left: calc(100*2% / 3);
+    }
+
+    .hover {
+        background-color: #92768C;
+    }
+
+    .hover:hover {
+        background-color: #4B296B;
+    }
+</style>
+
+<body style="background-color: #FDE6B4">
+    <div id="logo">
+        <img class="logoResize" src="Budget_Squad.svg">
+    </div>
+    <div id="title">
+        <h1 class="titlePos">Heading - Personal Details</h1>
+    </div>
+    <div id="print"> <!-- TODO: Need to make print button do something -->
+        <button class="topButton printPos" id="printButton">Print</button>
+    </div>
+    <div id="logoff"> <!-- TODO: Need to make logoff button do something -->
+        <button class="topButton logoffPos" id="logoffButton">Log off</button>
+    </div>
+    <div id="table"> <!-- TODO: Implement table -->
+
+    </div>
+    <div id="pie"> <!-- TODO: Implement pie chart -->
+
+    </div>
+    <div id="bar"> <!-- TODO: Implement bar chart -->
+
+    </div>
+    <div id="dashboard">
+        <a href="dashboards.html"><button class="bottomButton dashboards hover"><u>Dashboards</u></button></a>
+        <a href="expensesAndIncome.html"><button class="bottomButton expensesAndIncome hover"><u>Expenses & Income</u></button></a>
+        <a href="help.html"><button class="bottomButton home hover"><u>Help</u></button></a>
+    </div>
+</body>
+</html>

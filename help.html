@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+</head>
+
+<style>
+    .logoResize {
+        width: 100px;
+        height: 100px;
+    }
+    .logoPos {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .mediaResize {
+        width: 350px;
+        height: 300px;
+    }
+    .img1Pos {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
+    .video {
+        object-fit: fill;
+    }
+    .vidPos {
+        position: absolute;
+        top: 10%; /*TODO: Switch to 15% later */
+        left: 41%;
+    }
+    .img2Pos {
+        position: absolute;
+        top: 15%;
+        right: 15%;
+    }
+
+    .textArea {
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        margin: 15%;
+        bottom: 50px;
+        max-width: 80%;
+        max-height: 100px;
+    }
+
+    .topButton {
+        background-color: #B2B2B2;
+        border: 1px solid;
+        font-size: 30px;
+        margin: 4px 2px;
+        display: block;
+        padding: 8px;
+        position: absolute;
+        width: 10%;
+        top: 2%;
+    }
+    .printPos {
+        right: 13%;
+    }
+    .logoffPos {
+        right: 2%;
+    }
+    .bottomButton {
+        border: none;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 33%;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+    }
+    .dashboards {
+        left: calc(100*0%/ 3);
+    }
+
+    .expensesAndIncome {
+        left: calc(100*1%/ 3);
+    }
+
+    .home {
+        left: calc(100*2% / 3);
+    }
+    .hover {
+        background-color: #92768C;
+    }
+
+    .hover:hover {
+        background-color: #4B296B;
+    }
+</style>
+
+<body style="background-color: #FDE6B4">
+    <div id="logo">
+        <img class="logoResize logoPos" src="Budget_Squad.svg">
+    </div>
+    <div id="print"> <!-- TODO: Need to make print button do something -->
+        <button class="topButton printPos" id="printButton">Print</button>
+    </div>
+    <div id="logoff"> <!-- TODO: Need to make logoff button do something -->
+        <button class="topButton logoffPos" id="logoffButton">Log off</button>
+    </div>
+    <div class="img1Pos" id="img1">
+        <img class="mediaResize" src="350x300.png">
+    </div>
+    <div class="vidPos" id="vid">
+        <video width="350" height="300" controls>
+            <source class="video" src="sample_vid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="img2Pos" id="img2">
+        <img class="mediaResize" src="350x300.png">
+    </div>
+    <div class="textArea" id="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id elit ut odio euismod ultricies. Morbi
+            mattis convallis neque malesuada pulvinar. Maecenas sed pretium nisi. Morbi sapien ex, sollicitudin ac
+            tempus sed, molestie sit amet eros. Vivamus bibendum, neque at faucibus mattis, turpis lectus semper
+            mauris, eget semper augue nulla et tortor. Vivamus at mi magna. Fusce ullamcorper vestibulum velit,
+            sit amet mattis mauris volutpat sed. Ut feugiat urna non molestie tincidunt. Fusce dictum lacus nec orci
+            aliquet eleifend ultrices feugiat velit. Proin sit amet sapien nec orci cursus pellentesque in non nulla.
+            Vestibulum id diam tempor, vulputate quam id, tempor velit. Praesent ut elit convallis dolor suscipit
+            efficitur. Nulla at erat vel metus venenatis volutpat. Pellentesque ac felis augue. Donec pellentesque erat
+            urna, placerat dapibus risus ullamcorper vel. Phasellus in lobortis magna, eu feugiat lorem.</p>
+        <p>Donec eu fringilla nulla. Praesent placerat ultrices nulla. Duis lobortis orci dui, id vehicula arcu
+            lobortis non. Nam congue placerat risus id rhoncus. Pellentesque condimentum finibus iaculis. Nullam
+            in quam maximus turpis interdum tempor. Sed turpis dui, convallis sed aliquam sed, pulvinar vitae eros.
+            Fusce laoreet sed neque ut interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec condimentum quis quam in vehicula. Phasellus ante eros, tristique nec lacus sed,
+            viverra feugiat eros. Donec egestas posuere sem. Mauris a mauris dapibus, dictum nulla vel, lobortis neque.
+            Praesent sollicitudin justo enim, non convallis erat mattis at.
+        </p>
+    </div>
+    <div id="dashboard">
+        <a href="dashboards.html"><button class="bottomButton dashboards hover"><u>Dashboards</u></button></a>
+        <a href="expensesAndIncome.html"><button class="bottomButton expensesAndIncome hover"><u>Expenses & Income</u></button></a>
+        <a href="help.html"><button class="bottomButton home hover"><u>Help</u></button></a>
+    </div>
+</body>
+</html>
