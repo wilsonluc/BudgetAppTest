@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/The-Budget-Squad/thebudgetapp#readme",
   "devDependencies": {
-    "electron": "^9.1.2"
+    "electron": "^9.3.1"
   }
 }
